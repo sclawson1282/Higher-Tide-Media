@@ -1,0 +1,275 @@
+@import "reset.css";
+
+/** General Styles **/
+
+#wrap{
+	width:960px;
+	margin:0 auto;
+}
+body{
+	font-family:arial, sans-serif;
+	background-color:#6c6c6c;
+	color:#6c6c6c;
+	line-height:24px;
+	font-size:14px;
+}
+h1{
+	font-size:38px;
+	margin:0 0 30px 0;
+}
+h2{
+	font-size:28px;
+	margin:40px 0 30px 0;
+}
+h3{
+	font-size:24px;
+	margin:40px 0 20px 0;
+}
+h4{
+	font-size:18px;
+	margin:30px 0 15px 0;
+}
+h5{
+	font-size:18px;
+	margin:30px 0 5px 0;
+}
+p{
+	margin:0 0 15px 0;
+}
+a{
+	text-decoration:none;
+	color:#2684cd;
+}
+a:hover{
+	color:#555;
+	cursor:pointer;
+}
+.home{
+	background:url(../images/home-bg.png) repeat-x;
+}
+
+
+/** Header **/
+
+#header{
+	height:150px;
+	padding:45px 0 0 0;
+}
+#header img, #header h1{
+	float:left;
+}
+#header h1{
+	font-size:50px;
+	margin:32px 0 0 5px;
+}
+
+/** Nav **/
+
+#nav{
+	float:right;
+	margin:25px -15px 0 0;
+}
+.menu{
+	padding:7px 6px 0 0;
+}
+.menu li{
+	margin:0 5px;
+	padding:0 0 8px;
+	float:left;
+	position:relative;
+}
+.menu a{
+	display:block;
+	padding: 8px 15px;
+	margin:0;
+	color:#555;
+	text-decoration:none;
+	font-size:20px;
+}
+.menu .current a, .menu li:hover > a{
+	color:#2684cd;
+	font-family: inherit;
+}
+.menu ul li:hover a, .menu li:hover li a{
+	color:#555;
+}
+.menu ul a:hover{
+	background:#2684cd !important;
+	color:#fff !important;
+}
+.menu ul{
+	background:#eee;
+	display:none;
+	margin:0;
+	padding:0;
+	width:250px;
+	position:absolute;
+	top:35px;
+	left:20px;
+	border:solid 1px #ddd;
+}
+.menu li:hover > ul{
+	display:block;
+}
+.menu ul li{
+	float:none;
+	margin:0;
+	padding:0;
+}
+.menu ul a{
+	font-size:16px;
+}
+.menu ul ul{
+	left:250px;
+	top:-3px;
+}
+.menu li.current_page_item a{
+	color:#2684cd;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.menu .sub-menu li.current_page_item a{
+	color:#2684cd;
+}
+
+/** Featured Section **/
+
+#featured-section{
+	float:left;
+	margin:10px 0 0 0;
+}
+#featured-section h2{
+	background:url(../images/featured-title.png) no-repeat;
+	width:953px;
+	height:56px;
+	text-indent:-9999px;
+	margin-top:0;
+}
+#circles{
+	float:left;
+	margin:10px 0 0 0;
+}
+#circles img{
+	float:left;
+	border:none !important;
+	margin:0 0 0 36px;
+	width:213px;
+	height:300px;
+}
+#featured-section .circle-saw{ 
+	background:url(../images/circle-saw.png) no-repeat;
+}
+#featured-section .circle-gear{
+	background:url(../images/circle-gear.png) no-repeat;
+}
+#featured-section .circle-block{
+	background:url(../images/circle-block.png) no-repeat;
+}
+#featured-section .circle-facebook{
+	background:url(../images/circle-facebook.png) no-repeat;
+}
+#featured-section .first{
+	margin-left:0;
+}
+
+/** Image Slider **/
+
+#featured-section #image-slider{
+	float:left;
+	background:url(../images/image-stitch.png) repeat-x;
+	width:960px;
+	height:250px;
+	margin:100px 0 0 0;
+	border:0px #ddd solid;
+	background-color:#fff; 
+}
+.jcarousel-container-horizontal{
+	float:left;
+	margin:15px 0 0 30px !important;
+}
+#image-slider #mycarousel li{
+	float:left;
+	width:264px;
+	height:260px;
+	margin:0 0 0 0px;
+}
+#image-slider #mycarousel li.first{
+	margin-left:0;
+}
+#image-slider #mycarousel img{
+	margin:9px 0 0 9px;
+	padding:5px;
+	border:1px #ddd solid;
+	width:240px;
+	height:165px;
+}
+.jcarousel-prev-horizontal{
+	margin:90px 0 0 -18px;
+}
+.jcarousel-next-horizontal{
+	margin:90px 50px 0 0;
+}
+
+/** Front Page **/
+
+#frontpage-main{
+	float:left;
+	margin:115px 0 50px 0;
+	background-color:#fff;
+}
+#frontpage-main h3{
+	margin-top:0;
+}
+#frontpage-content{
+	float:left;
+	width:379px;
+	padding:0 100px 0 0;
+	border-right:1px #ddd dotted;
+}
+#frontpage-content p{
+	font-size:16px;
+	line-height:24px;
+}
+#frontpage-sidebar{
+	float:right;
+	width:380px;
+	padding:0 0 0 100px;
+}
+#frontpage-sidebar .meta, #frontpage-sidebar .meta a{
+	color:#aaa;
+	font-size:18px;
+}
+#frontpage-sidebar .blog-title{
+	font-size:18px;
+}
+#frontpage-sidebar .read-more{
+	display:block;
+	background:url(../images/blue-button-bg.png) no-repeat;
+	width:141px;
+	height:34px;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+}
+#frontpage-sidebar .read-more:hover{
+	background:url(../images/red-button-bg.png) no-repeat;
+}
+.blue-bullets{
+	float:left;
+	margin:10px 0 0 0;
+}
+.blue-bullets li{
+	background:url(../images/blue-bullet.png) no-repeat;
+	height:21px;
+	position:relative;
+	padding:0px 0 18px 35px;
+}
+
+/** Footer **/
+
+#footer{
+	float:left;
+	border-top:1px #ddd dotted;
+	margin:20px 0 0 0;
+	padding:15px 0 50px 0;
+	width:100%;
+}
