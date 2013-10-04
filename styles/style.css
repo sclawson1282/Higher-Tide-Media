@@ -8,8 +8,8 @@
 }
 body{
 	font-family:arial, sans-serif;
-	background-color:#6c6c6c;
-	color:#6c6c6c;
+	background-color:#fff;
+	color:#555;
 	line-height:24px;
 	font-size:14px;
 }
@@ -47,7 +47,20 @@ a:hover{
 .home{
 	background:url(../images/home-bg.png) repeat-x;
 }
-
+.page{
+	background:url(../images/home-bg.png) repeat-x;
+}
+.hide{
+	display:none;
+}
+.title{
+	margin-top:0;
+}
+.post-line{
+	clear:both;
+	border-bottom:1px #ddd dotted;
+	margin:40px 0 45px 0;
+}
 
 /** Header **/
 
@@ -138,7 +151,7 @@ a:hover{
 	margin:10px 0 0 0;
 }
 #featured-section h2{
-	background:url(../images/featured-title.png) no-repeat;
+	background:url(../images/featured-title.png) no-repeat; 
 	width:953px;
 	height:56px;
 	text-indent:-9999px;
@@ -179,8 +192,7 @@ a:hover{
 	width:960px;
 	height:250px;
 	margin:100px 0 0 0;
-	border:0px #ddd solid;
-	background-color:#fff; 
+	background-color:#fff;
 }
 .jcarousel-container-horizontal{
 	float:left;
@@ -262,6 +274,212 @@ a:hover{
 	height:21px;
 	position:relative;
 	padding:0px 0 18px 35px;
+}
+
+/** Content **/
+
+#main{
+	float:left;
+	margin:90px 0 50px 0;
+	width:100%;
+}
+#content{
+	float:left;
+	width:480px;
+	padding:0 165px 0 0;
+}
+
+/** Page **/
+
+.page-headline{
+	font-size:36px;
+	margin:-5px 0 0 0;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/** Portfolio **/
+
+#porfolio-content{
+	margin:30px 0 0 0;
+}
+.portfolio-item{
+	float:left;
+	margin:0 0 57px 57px;
+}
+.first{
+	margin-left:0;
+}
+.portfolio-item img{
+	border:1px #ddd solid;
+}
+
+/** About **/
+
+#project-content{
+	float:left;
+	width:480px;
+}
+#project-header{
+	margin:0 0 0 0;
+}
+#project-content h3{
+	margin:0 0 10px 0;
+}
+#project-content h3 span{
+	color:#888;
+}
+#project-image-large img{
+	float:right;
+	border:3px #ddd solid;
+}
+#project-image-large p{
+	float:left;
+}
+#project-content .read-more{
+	display:block;
+	background:url(../images/blue-button-bg.png) no-repeat;
+	width:141px;
+	height:34px;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	margin:25px 0 0 0;
+}
+#project-content .read-more:hover{
+	background:url(../images/red-button-bg.png) no-repeat;
+}
+
+/** Posts **/
+
+.post-title{
+	margin:0;
+}
+.post-title a{
+	font-size:24px;
+	color:#555;
+}
+.post-title a:hover{
+	font-size:24px;
+	color:#2684cd;
+}
+.post-meta, .post-meta a{
+	margin:5px 0 20px 0;
+	font-size:18px;
+	color:#888;
+}
+.more-link{
+	display:block;
+	background:url(../images/blue-button-bg.png) no-repeat;
+	width:141px;
+	height:34px;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	margin:25px 0 0 0;
+}
+.more-link:hover{
+	background:url(../images/red-button-bg.png) no-repeat;
+	color:#fff;
+}
+
+/** Sidebar **/
+
+#sidebar{
+	float:left;
+	width:315px;
+	margin:0;
+}
+#sidebar .sidebar-title{
+	margin-top:0;
+}
+#sidebar .sidebar-button{
+	clear:both;
+	display:block;
+	background:url(../images/blue-button-bg.png) no-repeat;
+	width:141px;
+	height:34px;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+}
+#sidebar .sidebar-button:hover{
+	background:url(../images/black-button-bg.png) no-repeat;
+}
+.recent-projects{
+	clear:both;
+}
+#sidebar .portfolio-item{
+	clear:both;
+	margin:0 0 20px 0;
+}
+
+/** Contact Form **/
+
+#contact-details{
+	float:left;
+	width:300px;
+	padding:0 120px 0 0;
+}
+#contact-details .title{
+	margin-top:0;
+	font-size: 24px;
+	font-family: inherit;
+}
+#contact-details h4{
+	margin:0 0 5px 0;
+}
+#contact-details span{
+	color:#888;
+}
+#contact-form-container{
+	float:left;
+	width:450px;
+}
+#contact-form input{
+	background:url(../images/textinput-bg.png) repeat-x;
+	border:1px #ddd solid;
+	padding:15px;
+	width:250px;
+	margin:0 0 15px 0;
+	font-size:12px;
+	color:#555;
+	font-family:arial, sans-serif;
+}
+#contact-form textarea{
+	background:url(../images/textarea-bg.png) repeat-x;
+	border:1px #ddd solid;
+	padding:15px;
+	width:350px;
+	margin:0 0 15px 0;
+	font-size:12px;
+	color:#555;
+	line-height:18px;
+	height:150px;
+	font-family:arial, sans-serif;
+}
+#contact-form .submit{
+	display:block;
+	background:url(../images/blue-button-bg.png) no-repeat;
+	width:141px;
+	height:34px;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	margin:25px 0 0 0;
+	border:none;
+	cursor:pointer;
+	font-size:12px;
+	margin:0 0 0 0;
+}
+#contact-form .submit:hover{
+	background:url(../images/red-button-bg.png) no-repeat;
+	color:#fff;
+}
+#response{
+	background-color:#eee;
+	border:1px #ddd solid;
+	padding:10px;
+	color:#ff0000;
 }
 
 /** Footer **/

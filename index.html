@@ -7,7 +7,14 @@
 <link type="text/css" rel="stylesheet" href="styles/skin.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="js/initSlider.js"></script> 
+<script type="text/javascript" src="js/initSlider.js"></script>
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
 
 </head>
 <body class="home">
@@ -75,13 +82,9 @@
     
     <div id="frontpage-sidebar">
       <h3>Latest Article</h3>
-      <a class="blog-title" href="#">What Should Be On Your Site?</a>
-      <p>Your website opens doors to contacts you’d never 
-		 imagine you’d meet. Now more than ever, millions 
-		 of people have access to your online presence, and 
-		 whether you like it or not, they’ll immediately judge 
-		 you upon your site design.</p>
-      <a class="read-more" href="#">Read More &raquo;</a> </div>
+      <a class="blog-title" >Starting Off: How I Grew My Business from my Garage.</a>
+      <p>You read all the time about stories of people starting in their garage and becoming the next big thing. While my story isn’t necessarily like that, I did start out in a garage, and I have seen success when it comes towards my business.c</p>
+      <a class="read-more" href="JavaScript:newPopup('http://chrispochiba.com/starting-off-how-i-grew-my-business-from-my-garage/')">Read More</a> </div>
       
     <!--end frontpage-sidebar-->
     
