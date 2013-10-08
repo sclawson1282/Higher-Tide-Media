@@ -18,6 +18,30 @@
 </script>
 <!-- end google analytics -->
 
+<!-- fancybox -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="js/fancy-box/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancy-box/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancy-box/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			$("a[rel=group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		});
+	</script>
+<!-- end fancybox -->
+
 </head>
 <body class="page">
 <div id="wrap">
@@ -37,23 +61,23 @@
   <div class="page-headline">Portfolio</div>
   <div id="main">
     <div id="porfolio-content">
-      <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/image6.png" alt="Business Card for Bartow First" /></a> </div>
+      <div class="portfolio-item first"> <a rel="group" href="images/image6_large.png"><img width="280" height="190" src="images/image6.png" alt="Business Card for Bartow First" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/image5.png" alt="Love&Laughter Connection Postcard" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/HeartsConnection_large.jpg"><img width="280" height="190" src="images/image5.png" alt="Love&Laughter Connection Postcard" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/image4.png" alt="Change For Change Postcard" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/image4_large.png"><img width="280" height="190" src="images/image4.png" alt="Change For Change Postcard" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/image3.png" alt="Southeastern Univeristy We Want You Event postcard" /></a> </div>
+      <div class="portfolio-item first"> <a rel="group" href="images/image3_large.png"><img width="280" height="190" src="images/image3.png" alt="Southeastern Univeristy We Want You Event postcard" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/image2.png" alt="Ignite Student Ministries Logo" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/image2_large.png"><img width="280" height="190" src="images/image2.png" alt="Ignite Student Ministries Logo" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/image1.png" alt="Ignite Student Ministries Lighter Logo" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/image1_large.png"><img width="280" height="190" src="images/image1.png" alt="Ignite Student Ministries Lighter Logo" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/Halapalooza280x190.jpg" alt="Halapalooza Postcard Image" /></a> </div>
+      <div class="portfolio-item first"> <a rel="group" href="images/Halapalooza_PC_large.jpg"><img width="280" height="190" src="images/Halapalooza280x190.jpg" alt="Halapalooza Postcard Image" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/HeartsShirt280x190.jpg" alt="Heart Connection T Shirt" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/HeartsShirt_large.png"><img width="280" height="190" src="images/HeartsShirt280x190.jpg" alt="Heart Connection T Shirt" /></a> </div>
       <!--end portfolio-item-->
-      <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/HalapaloozaSite280x190.jpg" alt="Halapalooza Site Image" /></a> </div>
+      <div class="portfolio-item"> <a rel="group" href="images/HalapaloozaSite_large.png"><img width="280" height="190" src="images/HalapaloozaSite280x190.jpg" alt="Halapalooza Site Image" /></a> </div>
       <!--end portfolio-item-->
     </div>
     <!--portfolio-content-->
