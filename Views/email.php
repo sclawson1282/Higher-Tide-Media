@@ -25,14 +25,14 @@
 </head>
 <body class="page">
 <div id="wrap">
-  <div id="header"><a href="index.html"><img src="images/logo.jpg" alt="This is the company logo" /></a>
+  <div id="header"><a href="../index.html"><img src="../images/logo.jpg" alt="This is the company logo" /></a>
     <div id="nav">
       <ul class="menu">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../articles.html">Articles</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </div>
     <!--end nav-->
@@ -54,7 +54,7 @@
   </div>
   <!--end main-->
   <div id="footer">
-    <p class="copyright">Copyright &copy; <a href="index.html">www.highertidemedia.com</a> - All Rights Reserved</p>
+    <p class="copyright">Copyright &copy; <a href="../index.html">www.highertidemedia.com</a> - All Rights Reserved</p>
   </div>
   <!--end footer-->
 </div>
